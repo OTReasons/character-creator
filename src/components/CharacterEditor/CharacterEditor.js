@@ -27,9 +27,10 @@ function App() {
   const [clothesColor, setClothesColor] = React.useState(
     defaultClothesColor
   );
-
+  
   return (
     <main className={styles.characterEditor}>
+      <div className={styles.perspectiveBar} />
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
         <header className={styles.header}>
           <h1 className={styles.title}>Create your Character</h1>
@@ -77,7 +78,6 @@ function App() {
           />
         </div>
       </MaxWidthWrapper>
-
       <div className={styles.characterWrapper}>
         <Character
           body={body}
